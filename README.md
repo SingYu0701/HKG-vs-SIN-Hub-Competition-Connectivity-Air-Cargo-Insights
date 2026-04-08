@@ -4,9 +4,9 @@
 
 ## Key Insights
 
-- **HKG has broader global connectivity, especially long-haul routes**
-- **SIN shows higher entropy → more balanced route distribution**
-- **Airline networks follow strong Pareto concentration (top routes dominate traffic)**
+- **HKG** has **broader global connectivity, especially long-haul routes**
+- **SIN** shows higher entropy →  **more balanced route distribution**
+- Airline networks follow strong Pareto concentration **(top routes dominate traffic)**
 - **Air connectivity is positively correlated with air freight volume (economic proxy)**
 
 Airline networks are critical infrastructure for:
@@ -40,8 +40,8 @@ This study combines:
   
 ## 2. Data Sources
 ### 2.1 OpenFlights Dataset
-- airports.dat
-- routes.dat
+- `airports.dat`
+- `routes.dat`
 
 Used to construct the global airline network:
 
@@ -71,9 +71,9 @@ Steps:
 
 A directed weighted graph was constructed:
 
-- **Nodes = airports**
-- **Edges = routes between airports**
-- **Weights = number of flights / route frequency**
+- Nodes = airports
+- Edges = routes between airports
+- Weights = number of flights / route frequency
 
 Network metrics computed:
 
@@ -139,9 +139,9 @@ Observations:
 
 Metrics compared:
 
-- **Entropy (diversity of routes)**
-- **Top-3 route share (concentration)**
-- **Network density**
+- Entropy (diversity of routes)
+- Top-3 route share (concentration)
+- Network density
 
 <img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/6555c725-9f96-4f74-8c60-ad0befaa1d2a" />
 
@@ -201,7 +201,7 @@ Route traffic distribution was analyzed using cumulative share:
 - Routes ranked by traffic volume
 - Cumulative percentage computed
 
-**Key concept: Pareto principle (80/20 rule)**
+Key concept: Pareto principle (80/20 rule)
 <img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/59c4fa2d-5cb6-4c00-9795-9703d585307d" />
 
 Finding:
@@ -215,11 +215,13 @@ Merged:
 
 - Airline network metrics (country-level aggregation)
 - World Bank air freight data
+  
 ### 10.2 Relationship Between Connectivity and Freight
 
 A cross-sectional analysis was conducted:
 
 X-axis: Total flight connectivity (network proxy)
+
 Y-axis: Air freight volume (economic activity proxy)
 
 <img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/37e9ff64-209e-44c7-b79d-162b65917da3" />
@@ -235,15 +237,15 @@ Computed correlation between:
 Interpretation:
 
 Positive correlation suggests that:
-- **Countries with stronger air connectivity tend to have higher air cargo volumes**
-- **Airline network structure reflects underlying economic activity**
+- Countries with **stronger air connectivity tend to have higher air cargo volumes**
+- Airline network structure reflects **underlying economic activity**
 
 ## 11. Key Findings
-- **Hong Kong demonstrates a more globally diversified network, with stronger long-haul connectivity.**
-- **Singapore exhibits a regionally concentrated hub structure, primarily focused on Southeast Asia.**
-- **Airline networks follow a highly skewed distribution, where a small number of routes dominate total traffic.**
-- **Network centrality measures effectively identify major aviation hubs and transfer nodes.**
-- **Integration with World Bank data shows a positive relationship between air connectivity and freight volume, indicating economic relevance of network structure.**
+- **Hong Kong** demonstrates a more **globally diversified network, with stronger long-haul connectivity.**
+- **Singapore** exhibits a **regionally concentrated hub structure, primarily focused on Southeast Asia.**
+- Airline networks follow a **highly skewed distribution, where a small number of routes dominate total traffic.**
+- Network centrality measures **effectively identify major aviation hubs and transfer nodes.**
+- Integration with World Bank data shows a **positive relationship between air connectivity and freight volume**, indicating **economic relevance** of network structure.
 
 ## 12. Skills Demonstrated
 
