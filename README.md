@@ -1,5 +1,21 @@
-# Global-Airline-Network-Analysis-HKG-vs-SIN-
-**Personal Data Analysis Project, Apr 2026**
+# HKG vs SIN – Hub Competition, Connectivity & Air Cargo Insights
+**Personal Data Analysis Project, Apr 2026** 
+![Made with R](https://img.shields.io/badge/Made%20with-R-276DC3?logo=r&logoColor=white)
+
+## Key Insights
+
+- **HKG has broader global connectivity, especially long-haul routes**
+- **SIN shows higher entropy → more balanced route distribution**
+- **Airline networks follow strong Pareto concentration (top routes dominate traffic)**
+- **Air connectivity is positively correlated with air freight volume (economic proxy)**
+
+Airline networks are critical infrastructure for:
+
+- **Global trade (air freight)**
+- **Economic connectivity**
+- **Regional hub competition**
+
+This project demonstrates how network science can be applied to real-world transportation systems.
 
 ## 1. Project Overview
 
@@ -82,10 +98,9 @@ Key insights:
 
 - **High concentration in East and Southeast Asia**
 - **Strong regional connectivity**
-- **Limited proportion of long-haul destinations compared to regional routes**
+- **High proportion of long-haul destinations compared to regional routes**
   
 <img width="1606" height="941" alt="圖片" src="https://github.com/user-attachments/assets/97157c13-0111-47cb-9b56-2c6d4fcdea6c" />
-<img width="1449" height="1002" alt="圖片" src="https://github.com/user-attachments/assets/dd57ef4f-6704-42d8-855f-48155f26dbf3" />
 
 
 ### 4.3 Regional Breakdown
@@ -96,7 +111,8 @@ Countries were grouped into regions:
 - Southeast Asia
 - Other regions
 
-**This highlights Hong Kong’s role as a asia regional hub rather than a globally dispersed hub.**
+**This highlights Hong Kong’s role as a asia regional hub also a globally dispersed hub.**
+<img width="1449" height="1002" alt="圖片" src="https://github.com/user-attachments/assets/dd57ef4f-6704-42d8-855f-48155f26dbf3" />
 
 ## 5. Singapore (SIN) vs Hong Kong (HKG) Comparison
 ### 5.1 Route Distribution Comparison
@@ -130,12 +146,14 @@ Metrics compared:
 <img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/6555c725-9f96-4f74-8c60-ad0befaa1d2a" />
 
 
-**Interpretation:**
+Interpretation:
 
-- Higher entropy → more diversified network
-- Higher top-3 share → more concentrated traffic
-- Density reflects overall connectivity of the hub
-  
+- **Higher entropy → more diversified network**
+- **Higher top-3 share → more concentrated traffic**
+- **Density reflects overall connectivity of the hub**
+
+Although Hong Kong appears to have a more visually diverse route map, Singapore exhibits higher entropy due to a more balanced distribution of traffic across routes, whereas Hong Kong’s traffic is more concentrated on a subset of high-volume connections.
+
 ## 6. Network Structure Analysis
 ### 6.1 Centrality Metrics
 
@@ -165,7 +183,7 @@ Purpose:
 
 - Visualize the core structure of HKG’s connectivity
 - Highlight dominant route flows
-- 
+  
 ## 8. Geographic Visualization Regional Map (Asia Focus)
 
 Filtered visualization focusing on Asia:
