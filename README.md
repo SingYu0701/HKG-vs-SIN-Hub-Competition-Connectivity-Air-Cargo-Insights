@@ -9,7 +9,7 @@
 - Airline networks follow strong Pareto concentration **(top routes dominate traffic)**
 - **Air connectivity is positively correlated with air freight volume (economic proxy)**
 - Networks are structurally robust, but disruptions lead to **traffic redistribution across hubs**
-- 
+  
 Airline networks are critical infrastructure for:
 
 - **Global trade (air freight)**
