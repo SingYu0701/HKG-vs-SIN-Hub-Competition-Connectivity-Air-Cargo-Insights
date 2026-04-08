@@ -8,7 +8,8 @@
 - **SIN** shows higher entropy →  **more balanced route distribution**
 - Airline networks follow strong Pareto concentration **(top routes dominate traffic)**
 - **Air connectivity is positively correlated with air freight volume (economic proxy)**
-
+- Networks are structurally robust, but disruptions lead to **traffic redistribution across hubs**
+- 
 Airline networks are critical infrastructure for:
 
 - **Global trade (air freight)**
@@ -143,7 +144,8 @@ Metrics compared:
 - Top-3 route share (concentration)
 - Network density
 
-<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/6555c725-9f96-4f74-8c60-ad0befaa1d2a" />
+<img width="1072" height="766" alt="圖片" src="https://github.com/user-attachments/assets/1808715b-b169-450c-936a-f24479f967be" />
+
 
 
 Interpretation:
@@ -162,9 +164,12 @@ Two key centrality measures were computed:
 - **Degree Centrality → number of direct connections**
 - **Betweenness Centrality → importance as a transfer hub**
   
-<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/f3b67462-7db1-4373-9550-de2b6d3cbbdc" />
-<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/5f0331f7-645e-43dc-a0de-12297d6c8b09" />
-<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/2db2ebb0-73af-4766-95b7-6f66589cd25a" />
+<img width="1816" height="929" alt="圖片" src="https://github.com/user-attachments/assets/5c8225e4-bd48-4282-8545-132816c7db01" />
+
+<img width="1816" height="929" alt="圖片" src="https://github.com/user-attachments/assets/42184a23-63b2-4454-9087-933d3d997091" />
+
+<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/b5977207-9492-4e39-a2e1-68591451ce3a" />
+
 
 
 Insights:
@@ -176,7 +181,8 @@ Insights:
 
 A subnetwork of the top routes from HKG was extracted (e.g., top 15 destinations by traffic).
 
-<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/b8be374d-03a9-415e-bfbd-c7fa91ff59ed" />
+<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/5b1f302e-76ad-4495-a880-d5c4e8e173d9" />
+
 
 
 Purpose:
@@ -184,15 +190,44 @@ Purpose:
 - Visualize the core structure of HKG’s connectivity
 - Highlight dominant route flows
   
-## 8. Geographic Visualization Regional Map (Asia Focus)
+### Geographic Visualization Regional Map (Asia Focus)
 
 Filtered visualization focusing on Asia:
 
 Highlights regional dominance of HKG routes
 Removes global noise for clarity
 
-<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/de1bffc7-bd1f-4f08-b379-698c5351a04c" />
+<img width="2560" height="1317" alt="圖片" src="https://github.com/user-attachments/assets/0ee4a1e5-f8e5-4081-856b-e484589996d5" />
 
+## 8.Network Robustness
+
+Instead of relying only on global network metrics, this analysis focuses on how traffic is **redistributed when a major hub is removed**.
+
+**Scenario: Removing HKG**
+
+Simulate a disruption scenario where HKG is removed from the global airline network.
+
+Key Findings
+Several regional airports show a significant increase in betweenness centrality
+This indicates that traffic is rerouted through **alternative hubs**
+
+<img width="1590" height="936" alt="圖片" src="https://github.com/user-attachments/assets/b98fc233-14d2-4bc1-918c-a0f7abde6da7" />
+
+
+Interpretation
+
+- HKG plays a **critical role in traffic routing**, not just connectivity
+- The global network remains **structurally stable**, but traffic shifts to nearby hubs
+- This reveals **hidden dependencies** in regional routing structure
+  
+Business Implications
+
+Network robustness should be evaluated beyond structural metrics
+
+Disruptions at major hubs lead to:
+- **Traffic redistribution**
+- **Increased load on alternative hubs**
+- **Potential congestion and operational risk**
 
 ## 9. Network Concentration Analysis
 
